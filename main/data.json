@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "nombre": "tostones de bife",
+        "img": "./img/mesa.jpg",
+        "precio": 900,
+        "cantidad": 1
+    },
+    {
+        "id": 2,
+        "nombre": "cachapa",
+        "img": "./img/mesa.jpg",
+        "precio": 1000,
+        "cantidad":1
+    },
+    {
+        "id": 2,
+        "nombre": "cachapa",
+        "img": "./img/mesa.jpg",
+        "precio": 1000,
+        "cantidad":1
+    },
+    {
+        "id": 2,
+        "nombre": "cachapa",
+        "img": "./img/mesa.jpg",
+        "precio": 1000,
+        "cantidad":1
+    },
+    {
+        "id": 2,
+        "nombre": "cachapa",
+        "img": "./img/mesa.jpg",
+        "precio": 1000,
+        "cantidad":1
+    },
+    {
+        "id": 2,
+        "nombre": "cachapa",
+        "img": "./img/mesa.jpg",
+        "precio": 1000,
+        "cantidad":1
+    },
+    {
+        "id": 3,
+        "nombre": "arepa",
+        "img": "./img/mesa.jpg",
+        "precio": 800,
+        "cantidad":1
+    }
+]
