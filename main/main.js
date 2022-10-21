@@ -323,7 +323,7 @@ function tuMesa(id) {
    seña();
    guardarMesasStorage(mesas);
    obtenerMesasStorage();
-   refrescar();
+  
    
    
 }
