@@ -1,0 +1,26 @@
+body{
+background-image: url("./img/logoneon.jpg");
+background-repeat: no-repeat;
+background-position: center center;
+background-attachment: fixed;
+background-size: cover;
+}
+
+header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+     margin-bottom: 20px; 
+  }
+  h1{
+    color: white;
+    padding: 2rem;
+    text-align: left;
+        text-transform: uppercase;
+        font-weight: 500px;
+        font-size: 30px;
+        margin: 2rem;
+    
+  }

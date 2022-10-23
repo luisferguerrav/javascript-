@@ -4,9 +4,12 @@ const pedido = [];
 
 
  const MenuDisponible = document.getElementById('tienda2');
+ 
+ 
   const pedirPosts = async () => {
       const response = await fetch('./data.json');
       const data = await response.json();
+      MenuDisponible.innerHTML = '';
       
     data.forEach( (p) => {
         let producto = document.createElement ("div");
@@ -21,7 +24,7 @@ const pedido = [];
         <img class="card-img-top" src="${p.img}" alt="Card image cap">
             <div class="card-body">
                 <h4 class="card-title">${p.nombre}</h4>
-                <p>${p.cantidad}</p>
+                
                 <p>${p.precio} Pesos</p>
                 
                 <button class="btn btn-primary" id="${p.id}">pedir</button>
@@ -32,7 +35,8 @@ const pedido = [];
         MenuDisponible.appendChild(producto)
         producto.querySelector("button").addEventListener("click", () =>{
             tuPedido(p.id);
-            pedirPosts();
+            // pedirPosts();
+            
         } ) 
         
         } ) 
@@ -51,35 +55,36 @@ async function tuPedido(id) {
    let productoDeMenu = pedido.find ( producto => producto.id === id);
 
    if (productoDeMenu) {
-    productoDeMenu.estado == "disponible";
-    Swal.fire({
-        imageUrl: "./img/lasmorochasnegro.png",
-        imageHeight: 250,
-         imageAlt: 'A tall image',
-        text: 'su reserva fue tomada con exito',
+    productoDeMenu.cantidad++;
+
+     Swal.fire({
+         imageUrl: "./img/lasmorochasnegro.png",
+         imageHeight: 250,
+          imageAlt: 'A tall image',
+         text:`La cantidad del producto ${producto.nombre} fue modificada`,
         
-      })
-   
+       })
+    
+   console.log(pedido);
     
    }else{
-    producto.estado = "disponible";
-    
+    producto.cantidad = 1;
 
     pedido.push(producto);
     Swal.fire({
         icon: 'success',
-        text: 'su reserva fue tomada con exito, pulsa en el logo para ver tus mesas',
+        text: 'su pedido fue tomado con exito, pulsa en el logo para ver tu pedidio',
         
       })
-
     console.log(pedido);
+
    }
    mostrarTuPedido();
    seña();
    guardarMesasStorage(pedido);
    obtenerMesasStorage();
    pedirPosts();
-
+   
    }
    
 
@@ -104,7 +109,7 @@ function mostrarTuPedido() {
             <img class="card-img-top" src="${p.img}" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">${p.nombre}</h5>
-                <p>${p.precio} Pesos</p>
+                <p>${p.precio} Pesos</p>s
                 <p>Cantidad: ${p.cantidad}</p>
                 <button class="btn btn-danger">Eliminar</button>
             </div>
@@ -127,16 +132,16 @@ function mostrarTuPedido() {
     ) 
 }
  function eliminarTuPedido(indice) {
-    pedido[indice].estado--;
+    pedido[indice].cantidad--;
 
-    if (pedido[indice].estado != "disponible") {
+    if (pedido[indice].cantidad === 0 ) {
         pedido.splice (indice, 1);
         
                      Swal.fire({
                         imageUrl: "./img/lasmorochasnegro.png",
                         imageHeight: 250,
                          imageAlt: 'A tall image',
-                         text: "su reserva a sido eliminada"
+                         text: "su producto a sido eliminado"
 
                      }
                     
@@ -155,20 +160,23 @@ function mostrarTuPedido() {
  }
 
  function seña() {
-    let total = 0;
-    let seña1 = 500
-    let seña2 = 500
-    pedido.forEach( (p) =>{
-       total += seña1 + seña2;
+ 
+        let total = 0;
+    
+        pedido.forEach((p)=>{
+        
+            total += p.precio * p.cantidad;
+        })
+    
         console.log(total);
-
-    })
+    
 
     const t = document.getElementById ("total")
     
+    
 t.innerHTML = `
                 <h5>${total} Pesos</h5>
-                <button class="btn btn-primary">reservar mesa</button
+                <button class="btn btn-primary">hacer pedido</button
 
                 `
             t.querySelector ("button").addEventListener("click", () => {

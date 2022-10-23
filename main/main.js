@@ -104,84 +104,84 @@ const mesasDisponibles = [
     {
         "id": 1,
         "nombre": "salon 1",
-        "img": "./img/mesa.jpg",
+        "img": "./img/mesa3.jpg",
         "cantidad": 20,
         "estado":"disponible"
     },
     {
         "id": 2,
         "nombre": "salon 2",
-        "img": "./img/mesa.jpg",
+        "img": "./img/mesa3.jpg",
         "cantidad": 10,
         "estado":"disponible"
     },
     {
         "id": 3,
         "nombre": "salon 3",
-        "img": "./img/mesa.jpg",
+        "img": "./img/mesa1.jpg",
         "cantidad": 4,
         "estado":"disponible"
     },
     {
         "id": 4,
         "nombre": "salon 4",
-        "img": "./img/mesa.jpg",
+        "img": "./img/mesa1.jpg",
         "cantidad": 5,
         "estado":"dispinible"
     },
     {
         "id": 5,
         "nombre": "patio 1",
-        "img": "./img/mesa.jpg",
+        "img": "./img/mesa1.jpg",
         "cantidad": 6,
         "estado":"disponible"
     },
     {
         "id": 6,
         "nombre": "patio 2",
-        "img": "./img/mesa.jpg",
+        "img": "./img/mesa1.jpg",
         "cantidad": 7,
         "estado":"disponible"
     },
     {
         "id": 7,
         "nombre": "patio 3",
-        "img": "./img/mesa.jpg",
+        "img": "./img/mesa1.jpg",
         "cantidad": 2,
         "estado":"disponible"
     },
     {
         "id": 8,
         "nombre": "terraza 1",
-        "img": "./img/mesa.jpg",
+        "img": "./img/mesa4.jpg",
         "cantidad": 4,
         "estado":"disponible"
     },
     {
         "id": 9,
         "nombre": "terraza 2",
-        "img": "./img/mesa.jpg",
+        "img": "./img/mesa4.jpg",
         "cantidad": 8,
         "estado":"disponible"
     },
     {
         "id": 10,
         "nombre": "terraza 3",
-        "img": "./img/mesa.jpg",
+        "img": "./img/mesa4.jpg",
         "cantidad": 11,
         "estado":"disponible"
     },
     {
         "id": 11,
         "nombre": "barra 1",
-        "img": "./img/mesa.jpg",
+        "img": "./img/mesa2.jpg",
         "cantidad": 2,
         "estado":"disponible"
     },
     {
         "id": 12,
         "nombre": "barra 2",
-        "img": "./img/mesa.jpg",
+        "img": "./img/mesa2.jpg",
         "cantidad": 2,
         "estado":"disponible"
     }
@@ -195,7 +195,7 @@ function mostrarMesas() {
     const tienda = document.getElementById("tienda");
     tienda.innerHTML = '';
 
-    const btnFiltros = ["redes sociales", "Horarios", "Info via whatsapp"];
+    const btnFiltros = [ "redes sociales", "Horarios", "Info via whatsapp"];
 
     const divContainer = document.createElement ("div");
     divContainer.classList.add ("container", "text-center");
