@@ -3,14 +3,14 @@ const mesasDisponibles = [
     {
         "id": 1,
         "nombre": "Salon 1",
-        "img": "./img/mesa3.jpg",
+        "img": "./img/mesa1.jpg",
         "cantidad": 20,
         "estado":"disponible"
     },
     {
         "id": 2,
         "nombre": "Salon 2",
-        "img": "./img/mesa3.jpg",
+        "img": "./img/mesa1.jpg",
         "cantidad": 10,
         "estado":"disponible"
     },
@@ -31,21 +31,21 @@ const mesasDisponibles = [
     {
         "id": 5,
         "nombre": "Patio 1",
-        "img": "./img/mesa1.jpg",
+        "img": "./img/mesa3.jpg",
         "cantidad": 6,
         "estado":"disponible"
     },
     {
         "id": 6,
         "nombre": "Patio 2",
-        "img": "./img/mesa1.jpg",
+        "img": "./img/mesa3.jpg",
         "cantidad": 7,
         "estado":"disponible"
     },
     {
         "id": 7,
         "nombre": "Patio 3",
-        "img": "./img/mesa1.jpg",
+        "img": "./img/mesa3.jpg",
         "cantidad": 2,
         "estado":"disponible"
     },
