@@ -35,7 +35,7 @@ const pedido = [];
         MenuDisponible.appendChild(producto)
         producto.querySelector("button").addEventListener("click", () =>{
             tuPedido(p.id);
-            // pedirPosts();
+        
             
         } ) 
         

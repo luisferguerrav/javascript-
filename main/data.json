@@ -1,63 +1,63 @@
 [
     {
         "id": 1,
-        "nombre": "tostones",
-        "img": "./img/tostones.jpeg",
+        "nombre": "Tostones",
+        "img": "./img/Tostones.jpeg",
         "precio": 1250,
         "cantidad": 1
     },
     {
         "id": 2,
-        "nombre": "cachapa",
-        "img": "./img/cachapa.jpeg",
+        "nombre": "Cachapa",
+        "img": "./img/Cachapa.jpeg",
         "precio": 1350,
         "cantidad":1
     },
     {
         "id": 3,
-        "nombre": "ensalada",
+        "nombre": "Ensalada",
         "img": "./img/ensalada.jpeg",
         "precio": 1350,
         "cantidad":1
     },
     {
         "id": 4,
-        "nombre": "rips",
+        "nombre": "Rips",
         "img": "./img/rips.jpeg",
         "precio": 2600,
         "cantidad":1
     },
     {
         "id": 5,
-        "nombre": "pescado",
+        "nombre": "Pescado",
         "img": "./img/pescado.jpeg",
         "precio": 1950,
         "cantidad":1
     },
     {
         "id": 6,
-        "nombre": "pique macho",
+        "nombre": "Pique macho",
         "img": "./img/pique macho2.jpeg",
         "precio": 2350,
         "cantidad":1
     },
     {
         "id": 7,
-        "nombre": "empanadas",
+        "nombre": "Empanadas",
         "img": "./img/empanadas.jpeg",
         "precio": 750,
         "cantidad":1
     },
     {
         "id": 8,
-        "nombre": "taquitos",
+        "nombre": "Taquitos",
         "img": "./img/taquitos.jpeg",
         "precio": 1350,
         "cantidad":1
     },
     {
         "id": 9,
-        "nombre": "arepa reina de langostinos",
+        "nombre": "Arepa reina de langostinos",
         "img": "./img/reina de langos.jpeg",
         "precio": 1550,
         "cantidad":1
