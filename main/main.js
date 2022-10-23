@@ -31,42 +31,42 @@ const mesasDisponibles = [
     {
         "id": 5,
         "nombre": "Patio 1",
-        "img": "./img/mesa3.jpg",
+        "img": "./img/mesa1.jpg",
         "cantidad": 6,
         "estado":"disponible"
     },
     {
         "id": 6,
         "nombre": "Patio 2",
-        "img": "./img/mesa3.jpg",
+        "img": "./img/mesa1.jpg",
         "cantidad": 7,
         "estado":"disponible"
     },
     {
         "id": 7,
         "nombre": "Patio 3",
-        "img": "./img/mesa3.jpg",
+        "img": "./img/mesa1.jpg",
         "cantidad": 2,
         "estado":"disponible"
     },
     {
         "id": 8,
         "nombre": "Terraza 1",
-        "img": "./img/mesa4.jpg",
+        "img": "./img/mesa1.jpg",
         "cantidad": 4,
         "estado":"disponible"
     },
     {
         "id": 9,
         "nombre": "Terraza 2",
-        "img": "./img/mesa4.jpg",
+        "img": "./img/mesa1.jpg",
         "cantidad": 8,
         "estado":"disponible"
     },
     {
         "id": 10,
         "nombre": "Terraza 3",
-        "img": "./img/mesa4.jpg",
+        "img": "./img/mesa1.jpg",
         "cantidad": 11,
         "estado":"disponible"
     },
